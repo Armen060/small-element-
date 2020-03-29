@@ -1,0 +1,26 @@
+let arr;
+    function samArray(){
+  arr=[];
+while(true){
+  let number=+prompt("Enter number");
+  if(number===""||number===null||!isFinite(number)){
+    break;
+  }
+  arr.push(number);
+} 
+  return arr;
+}
+console.log(samArray());
+
+let min;
+function minElementsamArray() {
+for(let i=0;i<arr.length;i++){
+  min=arr[0];
+  if(arr[i]<min){
+    min=arr[i];
+  } 
+}
+  return min;
+}  
+ let value=minElementsamArray();
+ console.log("min element is  "  +   value);
